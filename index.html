@@ -134,12 +134,12 @@ namely, dietitians, internists, and exercise experts. </p>
 		<div class="row">
 			<div class="col-lg-12 text-center">
 				<h1 class="mt-5">Main Use Case Details</h1>
-				<h2 class="ml-auto">User Validation</h2>
+				<h2 class="ml-auto">Validate Member</h2>
 				<p  style="padding:10%; border-radius: 20px;border: none; background-color: #5d636d;color: white;resize: none; text-align:left; font-size:20px;font-family:Courier New, Courier, monospace;">
 					
 						
 
-							Use Case: User Validation <br />
+							Use Case: Validate Member <br />
 							Context: Provider swipes a membership card from user to validate membership <br />
 							Actors: Provider, Data Center<br />
 							Main Success Scenario:<br />
@@ -151,12 +151,12 @@ namely, dietitians, internists, and exercise experts. </p>
 				
 				</p>
 
-				<h2 class="ml-auto">Billing</h2>
+				<h2 class="ml-auto">Run Billing</h2>
 				<p style="padding:10%; border-radius: 20px;border: none; background-color: #5d636d;color: white;resize: none; text-align:left; font-size:20px;font-family:Courier New, Courier, monospace;">
 
 
 
-					Use Case: Billing <br/>
+					Use Case: Run Billing <br/>
 					Context: Provider must bill ChocAn after a service has been provided to a ChocAn member<br />
 					Actors: Provider<br />
 					Main Success Scenario:<br />
@@ -196,20 +196,27 @@ namely, dietitians, internists, and exercise experts. </p>
 
 				</p>
 
-				<h2 class="ml-auto"> Accounting Procedure</h2>
+				<h2 class="ml-auto"> Run Main Accounting Procedure</h2>
 				<p style="padding:10%; border-radius: 20px;border: none; background-color: #5d636d;color: white;resize: none; text-align:left; font-size:20px;font-family:Courier New, Courier, monospace;">
 
 
-					Add Shit
+					Use Case: Run Main Accounting Procedure
+					Context: Generates reports for members, providers and managers. Also writes payroll data to the hard disk.
+					Actors: Manager, Data Center
+					Main Success Scenario:
+					1. Generates member report for every member that consulted a ChocAn provider that week with the list of services provided to them that week.
+					2. Generates provider report for every provider that worked that week.
+					3. Generates manager summary report for every active manager at ChocAn.
+					
 
 
 				</p>
 
-				<h2 class="ml-auto"> Account Management</h2>
+				<h2 class="ml-auto"> Run Account Management</h2>
 				<p style="padding:10%; border-radius: 20px;border: none; background-color: #5d636d;color: white;resize: none; text-align:left; font-size:20px;font-family:Courier New, Courier, monospace;">
 
 
-					Use Case: Account Management <br/>
+					Use Case: Run Account Management <br/>
 					Context: Each day operators can edit provider and member records.<br/>
 					Actors: Data Center, Operators <br/>
 					Main Success Scenario:<br/>
@@ -223,12 +230,12 @@ namely, dietitians, internists, and exercise experts. </p>
 
 				<h1 class="mt-5">Sub Use Case Details</h1>
 
-				<h2 class="ml-auto"> Verify</h2>
+				<h2 class="ml-auto"> Verify Service</h2>
 				<p style="padding:10%; border-radius: 20px;border: none; background-color: #5d636d;color: white;resize: none; text-align:left; font-size:20px;font-family:Courier New, Courier, monospace;">
 
 
 
-					Use Case: Verify <br/>
+					Use Case: Verify Service <br/>
 					Context: Verifies the service selected by the provider<br />
 					Actors:<br />
 					Main Success Scenario:<br />
@@ -246,10 +253,10 @@ namely, dietitians, internists, and exercise experts. </p>
 				</p>
 
 
-				<h2 class="ml-auto">Provider Directory</h2>
+				<h2 class="ml-auto">Access Provider Directory</h2>
 				<p style="padding:10%; border-radius: 20px;border: none; background-color: #5d636d;color: white;resize: none; text-align:left; font-size:20px;font-family:Courier New, Courier, monospace;">
 
-					Use Case: Provider Directory <br/>
+					Use Case: Access Provider Directory <br/>
 					Context: Access the provider directory<br/>
 					Actors:<br/>
 					Main Success Scenario: <br/>
@@ -295,10 +302,10 @@ namely, dietitians, internists, and exercise experts. </p>
 				</p>
 
 
-				<h2 class="ml-auto">Provider Report</h2>
+				<h2 class="ml-auto">Generate Provider Report</h2>
 				<p style="padding:10%; border-radius: 20px;border: none; background-color: #5d636d;color: white;resize: none; text-align:left; font-size:20px;font-family:Courier New, Courier, monospace;">
 
-					Use Case: Provider Report extends Generate Report<br/>
+					Use Case: Generate Provider Report extends Generate Report<br/>
 					Context: Generates a Provider report <br />
 					Actors:<br />
 					Main Success Scenario:<br />
@@ -306,14 +313,14 @@ namely, dietitians, internists, and exercise experts. </p>
 					2. Generates report for each provider with   Provider name (25 characters), Provider number (9 digits), Provider street address (25 characters), Provider city (14 characters), Provider state (2 letters), Provider ZIP code (5 digits).<br />
 					3. Reads record services provided by the specific provider.<br />
 					4. Adds to the generated report information about services provided including Date of service (MM–DD–YYYY), Date and time data were received by the computer (MM–DD–YYYY HH:MM:SS), Member name (25 characters), Member number (9 digits), Service code (6 digits), Fee to be paid (up to $999.99), Total number of consultations with members (3 digits), Total fee for week (up to $99,999.99).<br />
-					
+					5. A payroll record consisting of (EFT) data is written to a disk.
 
 				</p>
 
-				<h2 class="ml-auto">Member Report</h2>
+				<h2 class="ml-auto">Generate Member Report</h2>
 				<p style="padding:10%; border-radius: 20px;border: none; background-color: #5d636d;color: white;resize: none; text-align:left; font-size:20px;font-family:Courier New, Courier, monospace;">
 
-					Use Case: Member Report extends Generate Report<br/>
+					Use Case: Generate Member Report extends Generate Report<br/>
 					Context: Generates a Member report <br />
 					Actors:<br />
 					Main Success Scenario:<br />
@@ -324,10 +331,10 @@ namely, dietitians, internists, and exercise experts. </p>
 					
 				</p>
 
-				<h2 class="ml-auto">Manager Report</h2>
+				<h2 class="ml-auto">Generate Manager Report</h2>
 				<p style="padding:10%; border-radius: 20px;border: none; background-color: #5d636d;color: white;resize: none; text-align:left; font-size:20px; font-family:Courier New, Courier, monospace;">
 
-					Use Case: Manager Report extends Generate Report<br />
+					Use Case: Generate Manager Report extends Generate Report<br />
 					Context: Generates a Manager summary report<br />
 					Actors:<br />
 					Main Success Scenario:<br />
